@@ -1,11 +1,13 @@
 package com.karur.mcp_organisation_management_server.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "user")
 public class UserEntity {

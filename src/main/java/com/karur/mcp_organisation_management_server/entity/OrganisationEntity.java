@@ -1,14 +1,12 @@
 package com.karur.mcp_organisation_management_server.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -34,5 +32,5 @@ public class OrganisationEntity {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "parent_organisation_id")
-    private List<OrganisationEntity> childOrganisations;
+    private List<OrganisationEntity> childOrganisationEntities;
 }

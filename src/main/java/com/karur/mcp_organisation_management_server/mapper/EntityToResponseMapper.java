@@ -17,7 +17,7 @@ public class EntityToResponseMapper {
                 .orgRegNumber(organisationEntity.getOrgRegNumber())
                 .idNameAndValue(organisationEntity.getIdNameAndValue())
                 .addressResponse(buildAddressResponse(organisationEntity.getAddressEntity()))
-                .organisationResponses(organisationEntity.getChildOrganisations().stream().map(EntityToResponseMapper::buildOrganisationResponse).toList())
+                .organisationResponses(organisationEntity.getChildOrganisationEntities().stream().map(EntityToResponseMapper::buildOrganisationResponse).toList())
                 .build();
     }
 
