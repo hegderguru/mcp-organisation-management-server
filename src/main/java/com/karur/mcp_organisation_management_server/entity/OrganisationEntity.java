@@ -1,4 +1,4 @@
-package com.karur.mcp_organisation_management_server.entity.party;
+package com.karur.mcp_organisation_management_server.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -25,7 +25,8 @@ public class OrganisationEntity {
     private String number;
     private String name;
     private String description;
-
+    private String idNameAndValue;
+    
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private AddressEntity addressEntity;

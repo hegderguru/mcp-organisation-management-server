@@ -1,4 +1,4 @@
-package com.karur.mcp_organisation_management_server.entity.party;
+package com.karur.mcp_organisation_management_server.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
