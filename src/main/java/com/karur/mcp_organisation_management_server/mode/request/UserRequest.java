@@ -1,10 +1,11 @@
 package com.karur.mcp_organisation_management_server.mode.request;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserRequest {
 
     private Long id;

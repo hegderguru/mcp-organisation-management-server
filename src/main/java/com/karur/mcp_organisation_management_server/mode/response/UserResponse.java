@@ -2,11 +2,13 @@ package com.karur.mcp_organisation_management_server.mode.response;
 
 import com.karur.mcp_organisation_management_server.mode.request.AddressRequest;
 import com.karur.mcp_organisation_management_server.mode.request.OrganisationRequest;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserResponse {
 
     private Long id;
@@ -17,7 +19,7 @@ public class UserResponse {
     private String email;
     private String phone;
 
-    private AddressRequest addressRequest;
-    private OrganisationRequest organisationRequest;
+    private AddressResponse addressResponse;
+    private OrganisationResponse organisationResponse;
 
 }
