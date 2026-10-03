@@ -1,7 +1,5 @@
 package com.karur.mcp_organisation_management_server.mode.request;
 
-import com.karur.mcp_organisation_management_server.mode.response.AddressRequest;
-import com.karur.mcp_organisation_management_server.mode.response.OrganisationRequest;
 import lombok.Getter;
 import lombok.Setter;
 
