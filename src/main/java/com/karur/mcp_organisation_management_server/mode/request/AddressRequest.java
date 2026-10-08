@@ -1,6 +1,6 @@
 package com.karur.mcp_organisation_management_server.mode.request;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,10 +13,8 @@ import lombok.NoArgsConstructor;
 public class AddressRequest {
 
     private Long id;
-
-
+    @DiffId
     private String number;
-
     private String name;
     private String floor;
     private String street;

@@ -9,6 +9,7 @@ import lombok.*;
 public class UserRequest {
 
     private Long id;
+    @DiffId
     private String username;
     private String firstName;
     private String middleName;

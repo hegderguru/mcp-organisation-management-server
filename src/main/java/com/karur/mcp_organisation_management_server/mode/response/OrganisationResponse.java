@@ -13,7 +13,6 @@ import java.util.List;
 public class OrganisationResponse {
 
     private Long id;
-
     private String number;
     private String name;
     private String description;

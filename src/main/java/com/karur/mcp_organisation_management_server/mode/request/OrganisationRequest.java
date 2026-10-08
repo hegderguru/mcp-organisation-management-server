@@ -13,7 +13,7 @@ import java.util.List;
 public class OrganisationRequest {
 
     private Long id;
-
+    @DiffId
     private String number;
     private String name;
     private String description;
