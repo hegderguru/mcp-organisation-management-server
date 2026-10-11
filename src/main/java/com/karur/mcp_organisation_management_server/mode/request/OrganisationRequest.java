@@ -1,5 +1,6 @@
 package com.karur.mcp_organisation_management_server.mode.request;
 
+import com.karur.mcp_organisation_management_server.compare.DiffId;
 import lombok.*;
 
 import java.util.List;
