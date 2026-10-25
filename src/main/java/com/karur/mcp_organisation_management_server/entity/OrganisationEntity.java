@@ -27,7 +27,7 @@ public class OrganisationEntity {
     private String orgRegNumber;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    @JoinColumn(name = "address_id")
     private AddressEntity addressEntity;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
