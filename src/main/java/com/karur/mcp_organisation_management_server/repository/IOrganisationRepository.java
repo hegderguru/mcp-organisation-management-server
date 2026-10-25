@@ -1,4 +1,4 @@
-package com.karur.mcp_organisation_management_server.mode.repository;
+package com.karur.mcp_organisation_management_server.repository;
 
 import com.karur.mcp_organisation_management_server.entity.OrganisationEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
