@@ -17,7 +17,7 @@ public class EntityToRequestMapper {
                 .orgRegNumber(organisationEntity.getOrgRegNumber())
                 .idNameAndValue(organisationEntity.getIdNameAndValue())
                 .addressRequest(buildAddressRequest(organisationEntity.getAddressEntity()))
-                .organisationRequests(organisationEntity.getChildOrganisationEntities().stream().map(EntityToRequestMapper::buildOrganisationRequest).toList())
+                .childOrganisationRequests(organisationEntity.getChildOrganisationEntities().stream().map(EntityToRequestMapper::buildOrganisationRequest).toList())
                 .build();
     }
 

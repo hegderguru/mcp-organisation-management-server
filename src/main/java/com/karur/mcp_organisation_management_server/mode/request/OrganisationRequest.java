@@ -21,5 +21,5 @@ public class OrganisationRequest {
     private String idNameAndValue;
     private String orgRegNumber;
     private AddressRequest addressRequest;
-    private List<OrganisationRequest> organisationRequests;
+    private List<OrganisationRequest> childOrganisationRequests;
 }

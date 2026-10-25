@@ -54,7 +54,7 @@ public class RequestToEntityMapper {
                 .orgRegNumber(organisationRequest.getOrgRegNumber())
                 .idNameAndValue(organisationRequest.getIdNameAndValue())
                 .addressEntity(buildCompleteAddressEntity(organisationRequest.getAddressRequest()))
-                .childOrganisationEntities(organisationRequest.getOrganisationRequests().stream().map(RequestToEntityMapper::buildCompleteOrganisationRequest).toList())
+                .childOrganisationEntities(organisationRequest.getChildOrganisationRequests().stream().map(RequestToEntityMapper::buildCompleteOrganisationRequest).toList())
                 .build();
     }
 
